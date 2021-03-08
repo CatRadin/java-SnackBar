@@ -23,50 +23,50 @@ public class Main
 
 
   // PROCESSING of the application!~
-      var quantityOfItems = 3;
-      cust1.buySnack(quantityOfItems, soda.getCost());
-      soda.buySnackQuantity(quantityOfItems);
+
+      cust1.buySnack(3, soda.getCost());
+      soda.buySnackQuantity(3);
       System.out.println();
       System.out.println(cust1 + " cash on hand " + "$" + cust1.getCashOnHand());
-      System.out.println("Quantity of snack 4  is " + soda.getQuantity());
+      System.out.println("Quantity of soda  is " + soda.getQuantity());
 
-      quantityOfItems = 1;
-      cust1.buySnack(quantityOfItems, pretzel.getCost());
-      pretzel.buySnackQuantity(quantityOfItems);
+      
+      cust1.buySnack(1, pretzel.getCost());
+      pretzel.buySnackQuantity(1);
       System.out.println();
       System.out.println(cust1 + " cash on hand " + "$" + cust1.getCashOnHand());
-      System.out.println("Quantity of snack 3 is " + pretzel.getQuantity());
+      System.out.println("Quantity of pretzel is " + pretzel.getQuantity());
 
-      quantityOfItems = 2;
-      cust2.buySnack(quantityOfItems, soda.getCost());
-      soda.buySnackQuantity(quantityOfItems);
+      
+      cust2.buySnack(2, soda.getCost());
+      soda.buySnackQuantity(2);
       System.out.println();
       System.out.println(cust2 + " cash on hand " + "$" + cust2.getCashOnHand());
-      System.out.println("Quantity of snack 4  is " + soda.getQuantity());
+      System.out.println("Quantity of soda is " + soda.getQuantity());
 
-      double foundMoney = 10;
-      cust1.addCash(foundMoney);
+      
+      cust1.addCash(10);
       System.out.println();
       System.out.println(cust1 + " cash on hand " + "$" + cust1.getCashOnHand());
 
-      quantityOfItems = 1;
-      cust1.buySnack(quantityOfItems, chocolateBar.getCost());
-      chocolateBar.buySnackQuantity(quantityOfItems);
+      
+      cust1.buySnack(1, chocolateBar.getCost());
+      chocolateBar.buySnackQuantity(1);
       System.out.println();
       System.out.println(cust1 + " cash on hand " + "$" + cust1.getCashOnHand());
-      System.out.println("Quantity of snack 2  is " + chocolateBar.getQuantity());
+      System.out.println("Quantity of chocolate bar  is " + chocolateBar.getQuantity());
 
-      quantityOfItems = 12;
-      pretzel.setQuantity(quantityOfItems);
+      
+      pretzel.setQuantity(12);
       System.out.println();
-      System.out.println("Quantity of snack 3 is " + pretzel.getQuantity());
+      System.out.println("Quantity of pretzel is " + pretzel.getQuantity());
 
-      quantityOfItems = 3;
-      cust2.buySnack(quantityOfItems, pretzel.getCost());
-      pretzel.buySnackQuantity(quantityOfItems);
+      
+      cust2.buySnack(3, pretzel.getCost());
+      pretzel.buySnackQuantity(3);
       System.out.println();
       System.out.println(cust2 + " cash on hand " + "$" + cust2.getCashOnHand());
-      System.out.println("Quantity of snack 3 is " + pretzel.getQuantity());
+      System.out.println("Quantity of pretzel is " + pretzel.getQuantity());
 
       System.out.println();
       System.out.println("******* STRETCH GOALS *******");
