@@ -17,6 +17,9 @@ public class Snack
     //Constructor ----------------------------------
     public Snack(String name, int quantity, double cost, int vendingMachineId)
     {
+        maxId++;
+        id = maxId;
+
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
@@ -69,6 +72,19 @@ public class Snack
     {
         this.vendingMachineId = vendingMachineId;
     }
+
+    //methods -------------------------------------
+    // buySnack
+  public void buySnackQuantity(int numToBuy)
+  {
+    this.quantity -= numToBuy;
+  }
+
+// total
+  public double getTotal(int quantity)
+  {
+    return this.cost * quantity;
+  }
 
 
 

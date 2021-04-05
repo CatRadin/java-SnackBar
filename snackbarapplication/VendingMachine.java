@@ -5,11 +5,14 @@ public class VendingMachine
     //Feilds ---------------------------
     private static int maxId = 1; //Static means it will always point to the same point in memory. Its the same everywhere.
     private int id;
-    String name;
+    private String name;
 
     //Constructor ----------------------
-    public vendingMachine(String name)
+    public VendingMachine(String name)
     {
+        maxId++;
+        id = maxId;
+
         this.name = name;
     }
 
