@@ -14,7 +14,6 @@ public class Main
  // VendingMachine food, drink and office
     VendingMachine food = new VendingMachine("Food");
     VendingMachine drink = new VendingMachine("Drink");
-    VendingMachine office = new VendingMachine("Office");
 
 // Snack (String name, int quantity, double cost, int vendingMachineId)
     Snack chips = new Snack("Chips", 36, 1.75, food.getId());
